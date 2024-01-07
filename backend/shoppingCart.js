@@ -10,7 +10,7 @@ function productsInit(){
   let titles = ["A", "B", "C", "D", "E"];
   let prices = [12, 5, 7, 3, 10];
   let descriptions = ["Watch", "t-shirt", "Shirt", "Bag of Candy", "Bible"];
-  let imageURL = ["images/watch.jpg", "T-Shirt.jpg", "shirt.jpg", "Colorful_candy.jpg", "The_Holy_Bible.png"];
+  let imageURL = ["images/watch.jpg", "images/T-Shirt.jpg", "images/shirt.jpg", "images/Colorful_candy.jpg", "images/The_Holy_Bible.png"];
 
   for(let i= 0; i < 5; i++){
     let id = i;
@@ -65,10 +65,6 @@ function getProductByID(productID, res) {
 function isEmpty(array){
   return array.length === 0;
 }
-
-// Management
-
-
 
 // Launch App
 
