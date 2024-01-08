@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"cd shopping-cart-Frontend && npm run dev\" \"cd backend && node shoppingCart.js\""
+  }
+}
