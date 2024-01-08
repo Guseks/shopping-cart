@@ -7,10 +7,10 @@ let products = [];
 
 //Create my Products (These are just temporary for demo purposes)
 function productsInit(){
-  let titles = ["A", "B", "C", "D", "E"];
+  let titles = ["Watch", "Wikipedia T-shirt", "Tennis raquet", "Candy", "Bible"];
   let prices = [12, 5, 7, 3, 10];
-  let descriptions = ["Watch", "t-shirt", "Shirt", "Bag of Candy", "Bible"];
-  let imageURL = ["images/watch.jpg", "images/T-Shirt.jpg", "images/shirt.jpg", "images/Colorful_candy.jpg", "images/The_Holy_Bible.png"];
+  let descriptions = ["Watch", "t-shirt", "Tennis raquet", "Bag of Candy", "Bible"];
+  let imageURL = ["images/watch.jpg", "images/T-Shirt.jpg", "images/tennis.jpg", "images/Colorful_candy.jpg", "images/The_Holy_Bible.png"];
 
   for(let i= 0; i < 5; i++){
     let id = i;

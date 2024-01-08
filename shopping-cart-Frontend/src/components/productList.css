@@ -1,5 +1,13 @@
+.list-container {
+  margin: 0 auto;
+}
+
 .cards-container {
   display: flex;
   column-gap: 20px;
   
+}
+
+.productList-headline {
+  color: rgb(240,240,240);
 }

@@ -1,15 +1,29 @@
 import React from 'react'
 import "./productCard.css"
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product, stateVariables}) => {
   const {name, price, desc, imgURL} = product;
+
+  const {shoppingCartItems, setShoppingCartItems} = stateVariables;
+
+  const handleAddToCart = () => {
+    setShoppingCartItems([...shoppingCartItems, product]);
+  }
+
   return (
     <div className='product-card'>
-      <span>{`Image: ${imgURL}`}</span>
+      <img src={imgURL}></img>
       <div className='product-details'>
         <h4 className='product-name'>{name}</h4>
-        <span className='product-price'>{price}</span>
-        <button className='add-to-cart btn btn-outline-dark '>Add to Cart</button>
+        <div className='price-info'>
+          <span className='price'>{'Price: '}</span>
+          <span className='product-price'>{`${price} $`}</span>
+        </div>
+        <div className='buttons'>
+          <button className='more-info'>More info</button>
+          <button className='add-to-cart' onClick={()=>handleAddToCart()}>Add to Cart</button>
+        </div>
+        
       </div>
     </div>
   )
