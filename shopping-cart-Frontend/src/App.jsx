@@ -12,7 +12,8 @@ const App = () => {
   const [shoppingCartItems, setShoppingCartItems] = useState([]);
   const [currentPage, setCurrentPage] = useState('home');
 
-  const handleNavigateToCheckout = () => {
+  const handleNavigateToCheckout = (itemsInCart) => {
+    setShoppingCartItems(itemsInCart)
     setCurrentPage("checkout");
   }
 

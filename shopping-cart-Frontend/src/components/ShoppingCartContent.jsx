@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "./shoppingCartContent.css"
 
 const ShoppingCartContent = ({shoppingCartItems, removeItem, NavigateToCheckout}) => {
@@ -42,7 +42,7 @@ const ShoppingCartContent = ({shoppingCartItems, removeItem, NavigateToCheckout}
         <span className='total-price'>{`Total Price: ${totalPrice} $`}</span>
       </div>
 
-      <button className='checkout' onClick={NavigateToCheckout}>Proceed to Checkout</button>
+      <button className='checkout-button' onClick={()=> NavigateToCheckout(calculatedItemsArray)}>Proceed to Checkout</button>
       
     </div>
   );
