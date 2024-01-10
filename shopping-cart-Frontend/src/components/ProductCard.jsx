@@ -1,10 +1,8 @@
 import React from 'react'
 import "./productCard.css"
 
-const ProductCard = ({product, stateVariables}) => {
+const ProductCard = ({product, setShoppingCartItems, shoppingCartItems}) => {
   const {name, price, desc, imgURL} = product;
-
-  const {shoppingCartItems, setShoppingCartItems} = stateVariables;
 
   const handleAddToCart = () => {
     setShoppingCartItems([...shoppingCartItems, product]);

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import "./shoppingCartContent.css"
 
-const ShoppingCartContent = ({shoppingCartItems, removeItem}) => {
+const ShoppingCartContent = ({shoppingCartItems, removeItem, NavigateToCheckout}) => {
   
   
 
@@ -42,7 +42,7 @@ const ShoppingCartContent = ({shoppingCartItems, removeItem}) => {
         <span className='total-price'>{`Total Price: ${totalPrice} $`}</span>
       </div>
 
-      <button className='checkout'>Proceed to Checkout</button>
+      <button className='checkout' onClick={NavigateToCheckout}>Proceed to Checkout</button>
       
     </div>
   );
